@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+paths = Dir.glob("**/*").select { |path|
+  not FileTest::directory? path
+}.map { |path|
+  [path, File::stat(path).mtime]
+}.sort_by { |path, time|
+  time
+}.reverse
+
+if ARGV[0]
+  pt = paths[ARGV[0].to_i]
+  if pt
+    puts pt[0]
+  else
+    STDERR.puts "There are only #{paths.length} file(s)"
+  end
+else
+   paths.slice(0, 10).each_with_index{|pt, i|
+    puts "#{i}: #{pt[0]}"
+  }
+end

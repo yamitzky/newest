@@ -1,0 +1,34 @@
+### https://raw.github.com/github/gitignore/792a95ef293a8eb68e3ed93a85578dade70d0553/Global/VIM.gitignore
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+### https://raw.github.com/github/gitignore/792a95ef293a8eb68e3ed93a85578dade70d0553/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
